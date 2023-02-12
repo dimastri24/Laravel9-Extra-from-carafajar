@@ -43,3 +43,10 @@ INSERT INTO `students` (`id`, `name`, `nis`, `address`) VALUES (NULL, 'Andi', '1
 -   Kalau mau deep dive kyknya ini tergantung practice tim atau perusahaan masing" sih ya jadi ikutan mereka aja settingan nya.
 -   Oh iya, setting nya di file .env, jeroan configurasi nya di config/logging.php
 -   File log nya ada di storage/logs .
+
+#### Log Viewer
+
+-   Ini package buatan org, gunanya buat bantu liat log nya lewat browser.
+-   Ini dokumentasi github [opcodesio/log-viewer](https://github.com/opcodesio/log-viewer).
+-   Selama lokasi file logging nya masih default, gk ada yg perlu di otak-atik, cuma cukup install doang beres siap pakai.
+-   Tambahan disini cara logging di codingannya tinggal `Log::(tipe log)` kalo ada tambahan lain misal message atau data lainnya, cari tau lagi aja di dokumentasi logging laravel atau searching.

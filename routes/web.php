@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\StudentController;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // Log::info('ini adalah log info');
+    // Log::alert('ini adalah log alert');
+    // Log::warning('ini adalah log warning');
+    // Log::debug('ini adalah log debug');
+    // Log::emergency('ini adalah log emergency');
+    // Log::critical('ini adalah log critical');
+    Log::notice('ini adalah log notice');
 });
 
 
-Route::get('/students', [StudentController::class, 'index']);
+// Route::get('/students', [StudentController::class, 'index']);
