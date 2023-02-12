@@ -17,3 +17,14 @@ Bisa aja content belajar dari playlist lain akan ku taruh sini juga.
 ### Master / Main / Init / Default / Starter
 
 -   Ini branch starter untuk memulai branch baru lainnya. Jadi disini ngak ada apa" ya cuma akan ada update di md ini doang
+
+### Laravel-Breeze
+
+-   DB_DATABASE=laravel_breeze
+-   [Documentasi starter kit Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze)
+-   Saat install ntar ditanya". Pilih buat stack apa? kali ini kita buat blade. Mau dark mode gk? yes. Mau pake Pest test atau PHPUnit aja? yes
+-   Keren bgt sih ini banyak bgt hal yg dah dibikinin sama breeze, bisa langsung di cek di route nya untuk liat apa aja. Yang terbaru skrg jadi ada profile sama update profile sekaligus delete account sendiri juga.
+-   Kalo mau forgot password kyknya harus setup email server dulu.
+-   Jelas krn default ya attribute user nya gitu doang tapi kalo mau di otak atik bisa kyknya, pertama pasti update migration user nya dulu sisanya ngikut, controller juga gk akan byk berubah juga kyknya misal pas update profile.
+-   Disini dah disiapin juga tailwind sama vite nya jadi dah cuma tinggal update layout tampilan sama component nya.
+-   Karena cuma mau pengenalan jadi gk akan ku apa"in, mungkin kedepannya butuh ya pada saat itu baru cari tau apa aja yg bisa di custom.
