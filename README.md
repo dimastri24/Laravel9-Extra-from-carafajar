@@ -17,3 +17,9 @@ Bisa aja content belajar dari playlist lain akan ku taruh sini juga.
 ### Master / Main / Init / Default / Starter
 
 -   Ini branch starter untuk memulai branch baru lainnya. Jadi disini ngak ada apa" ya cuma akan ada update di md ini doang
+
+### Model Binding
+
+-   Get data tanpa menggunakan query.
+-   Yaitu dengan nge bind Model langsung ke argument function.
+-   Contoh nya langsung liat aja biar gampang.
