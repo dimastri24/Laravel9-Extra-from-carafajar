@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Person;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    $person = Person::first();
+    $person['full_name'] = $person->first_name . ' ' . $person->last_name;
+    dd($person['full_name']);
+});
+
+Route::get('/person', function () {
+    $person = Person::find(2);
+    dd($person->first_name);
+});
+
+Route::get('/full', function () {
+    $person = Person::find(2);
+    $fullName = $person->full_name;
+    dd($fullName);
+});
+
+Route::get('/create', function () {
+    $person = Person::create([
+        'first_name' => 'tsubasa',
+        'last_name' => 'ojora',
+        'address' => 'rumah tsubasa',
+    ]);
+    dd($person);
 });
