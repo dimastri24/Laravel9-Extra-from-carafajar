@@ -20,6 +20,7 @@ Bisa aja content belajar dari playlist lain akan ku taruh sini juga.
 
 ### Model Binding
 
+-   `DB_DATABASE=laravel_belajar`
 -   Get data tanpa menggunakan query.
 -   Yaitu dengan nge bind Model langsung ke argument function.
 -   Contoh nya langsung liat aja biar gampang.
