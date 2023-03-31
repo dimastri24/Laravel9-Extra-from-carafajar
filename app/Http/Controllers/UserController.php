@@ -10,15 +10,10 @@ class UserController extends Controller
 {
     public function store()
     {
-        $user1 = User::create([
-            'name' => 'user 3',
-            'email' => 'user3@email.com',
+        User::create([
+            'nameasdsadasd' => 'user 2',
+            'email' => 'user2@email.com',
             'password' => '1234'
         ]);
-
-        // cara tidak clean code
-        // ActivityLog::create([
-        //     'description' => 'create user ' . $user1->name,
-        // ]);
     }
 }

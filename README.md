@@ -26,3 +26,9 @@ Bisa aja content belajar dari playlist lain akan ku taruh sini juga.
 -   Kita bisa bikin closure di dalem booted function dalam model utk register event yg akan di eksekusi.
 -   Dengan pakai event kodingan kita jadi lebih bersih krn kita gk nulis log di user controller.
 -   Ini masih basic Event nya. Jika Event nya makin besar kita akan belajar Observer dan Event Listeners
+
+### Laravel Observers
+
+-   DB_DATABASE=laravel_accessors-mutators
+-   Dengan Observer level kodingan kita naik ketingkat lebih lanjut lagi krn semakin clean dan terstruktur.
+-   Kita sdh gk nulis event di model lagi, melainkan di file terpisah, kita hanya perlu register oberver nya di EventServiceProvider.
