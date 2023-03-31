@@ -17,3 +17,12 @@ Bisa aja content belajar dari playlist lain akan ku taruh sini juga.
 ### Master / Main / Init / Default / Starter
 
 -   Ini branch starter untuk memulai branch baru lainnya. Jadi disini ngak ada apa" ya cuma akan ada update di md ini doang
+
+### Laravel Events
+
+-   DB_DATABASE=laravel_accessors-mutators
+-   Events itu adalah cara untuk melakukan sesuatu saat suatu activitas sedang atau sudah terjadi.
+-   Ada beberapa default events yg bisa kita pakai, bisa diliat aja langsung di dokumentasi nya [Events](https://laravel.com/docs/9.x/eloquent#events). Yang akhiran -ing itu saat terjadi, yg -ed setelah terjadi. Bedanya yg sudah terjadi akan rollback semua jika event yg dia listen itu gagal contohnya gagal di UserController nih jadi gk akan kebikin juga log nya.
+-   Kita bisa bikin closure di dalem booted function dalam model utk register event yg akan di eksekusi.
+-   Dengan pakai event kodingan kita jadi lebih bersih krn kita gk nulis log di user controller.
+-   Ini masih basic Event nya. Jika Event nya makin besar kita akan belajar Observer dan Event Listeners
