@@ -20,6 +20,7 @@ Bisa aja content belajar dari playlist lain akan ku taruh sini juga.
 
 ### Accessors dan Mutators
 
+-   `DB_DATABASE=laravel_accessors-mutators`
 -   Basic nya ini itu ya getter dan setter.
 -   Gunanya apa? Jika butuh memanipulasi data terlebih dahulu sblm di get atau di set.
 -   Attribute ini tidak mesti yg ada di column table tapi kita bisa buat sendiri juga.
