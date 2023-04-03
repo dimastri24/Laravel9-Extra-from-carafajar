@@ -28,3 +28,16 @@ Bisa aja content belajar dari playlist lain akan ku taruh sini juga.
 -   Dalam Envelope kita define kyk subject, cc, bb, from, replyto, dll. Untuk from dan replyto bisa kita bikin global configuration nya di /config/mail.php .
 -   Content ya isi content email nya, view: utk markup nya, tambahanya juga bisa kita taro di with: dari situ kita bisa akses data nya di markup file atau blade file yg sudah kita bikin.
 -   Terakhir ada Attachement ya untk attach file di dalem email nya.
+
+### Mail Queue
+
+-   DB_DATABASE=laravel_accessors-mutators
+-   QUEUE_CONNECTION=database
+-   Dokumentasi nya ada di [Queueing Mail](https://laravel.com/docs/9.x/mail#queueing-mail) dan [Queue](https://laravel.com/docs/9.x/queues).
+-   Mau jelasin nya juga bingung gw. Pada bagian Mailable nya sama aja cuma tinggal di foreach utk setiap email yg dituju.
+-   First of we can start by creating the job class `php artisan make:job ProcessPodcast`
+-   Second we will create new table for the queue and migrate it `php artisan queue:table` then `php artisan migrate`.
+-   Third we will specify the queue is using the database in env.
+-   Karena skrg pake queue di SendEmail gk langsung panggil Mail::to tapi kita dispatch ProcessNewsLetter atau job class yg kita bikin. Di dalem handle() nya baru kita coding Mail::to nya.
+-   Sampai sini saat kita send email maka request nya akan di queue atau disimpan di table yg kita bikin, nah ini gk langsung di jalanin. Untuk menjalankan queue nya kita harus jalanin command nya `php artisan queue:work`. Ada beberapa argumen command yg bisa kita tambahkan.
+-   Saat di production, kita butuh bikin yg namanya Supervisor. Supervisor ini set of command yg akan automate proses command queue ini.

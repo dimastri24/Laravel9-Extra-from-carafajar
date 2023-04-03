@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/send', [SendEmail::class, 'index']);
+
+Route::get('/send-newsletter', [SendEmail::class, 'sendNewsLetter']);
