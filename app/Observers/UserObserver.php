@@ -15,9 +15,9 @@ class UserObserver
      */
     public function created(User $user)
     {
-        ActivityLog::create([
-            'description' => 'create user ' . $user->name,
-        ]);
+        // ActivityLog::create([
+        //     'description' => 'create user ' . $user->name,
+        // ]);
     }
 
     /**
